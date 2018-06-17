@@ -13,6 +13,15 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Forms_Objetcs">
+      <UniqueIdentifier>{7d831d95-fa60-48a2-8ced-860d36aec231}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Forms_Objetcs\Header">
+      <UniqueIdentifier>{c5f906ea-bc52-411d-89cc-2a614b67cf34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Forms_Objetcs\Resource">
+      <UniqueIdentifier>{410941a5-fe08-4270-b335-088cfa7b3fe4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -21,6 +30,9 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Slider.h">
+      <Filter>Forms_Objetcs\Header</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -28,6 +40,9 @@
     </ClCompile>
     <ClCompile Include="Square 2.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Slider.cpp">
+      <Filter>Forms_Objetcs\Resource</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
