@@ -13,5 +13,6 @@ class Slider
 		sf::RenderWindow *window;
 		sf::RectangleShape Outline;
 		sf::RectangleShape Slide;
+		void setValue();
 		void IsMouseOnSlider();
 };
