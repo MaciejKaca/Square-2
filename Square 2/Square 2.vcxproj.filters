@@ -9,10 +9,6 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
     <Filter Include="Forms_Objetcs">
       <UniqueIdentifier>{7d831d95-fa60-48a2-8ced-860d36aec231}</UniqueIdentifier>
     </Filter>
@@ -21,6 +17,9 @@
     </Filter>
     <Filter Include="Forms_Objetcs\Resource">
       <UniqueIdentifier>{410941a5-fe08-4270-b335-088cfa7b3fe4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Extensions">
+      <UniqueIdentifier>{5991b3df-1e8b-4914-8700-82c46580ec32}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -32,6 +31,9 @@
     </ClInclude>
     <ClInclude Include="Slider.h">
       <Filter>Forms_Objetcs\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Shapes.h">
+      <Filter>Extensions</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
