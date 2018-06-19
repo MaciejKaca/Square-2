@@ -1,6 +1,9 @@
 #pragma once
+#include <iostream>
 #include <SFML\Graphics.hpp>
 #include <SFML\System.hpp>
+#include <thread>         
+
 class Slider
 {
 	public: 
@@ -13,6 +16,8 @@ class Slider
 		sf::RenderWindow *window;
 		sf::RectangleShape Outline;
 		sf::RectangleShape Slide;
+		sf::Thread *_setValue;
 		void setValue();
 		void IsMouseOnSlider();
+		bool isThreadActive;
 };
