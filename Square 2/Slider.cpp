@@ -27,7 +27,13 @@ void Slider::setValue()
 		int step = (Shade.getSize().x) / (maxValue - 1);
 		int width = Shade.getSize().x;
 		int mousePosistion = sf::Mouse::getPosition(*window).x - Slide.getPosition().x;
-		Value = ceil(mousePosistion / step);
+		Value = [](int Value,int maxValue)->int {
+			if(Value<0)
+				return 0;
+			if (Value > maxValue)
+				return maxValue;
+			return Value;
+		}(ceil(mousePosistion / step), maxValue-1);
 
 		Slide.setSize(sf::Vector2f( Value*step, Slide.getSize().y));
 	}
