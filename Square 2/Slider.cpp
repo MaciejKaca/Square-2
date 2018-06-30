@@ -75,6 +75,30 @@ void Slider::IsMouseOnSlider()
 
 }
 
+void Slider::setAll(sf::Vector2f size, int _maxValue)
+{
+	Outline.setSize(size);
+	Slide.setSize(sf::Vector2f(size.x - (size.y - size.y*0.8), size.y*0.8));
+	Shade = Slide;
+	sf::Color color = Outline.getFillColor();
+
+	Shade.setFillColor(sf::Color(std::abs(color.r - 50), std::abs(color.g - 50), std::abs(color.b - 50)));
+	Outline.setFillColor(sf::Color(255, 0, 255));
+	maxValue = _maxValue;
+}
+
+void Slider::setValue(int value)
+{
+	int step = (Shade.getSize().x) / (maxValue - 1);
+	Value = value;
+	Slide.setSize(sf::Vector2f(Value*step, Slide.getSize().y));
+}
+
+int Slider::getValue()
+{
+	return Value;
+}
+
 void Slider::Display()
 {
 	IsMouseOnSlider();

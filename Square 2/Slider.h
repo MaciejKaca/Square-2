@@ -12,6 +12,8 @@ class Slider
 		void Display();
 		sf::Vector2f getPosition();
 		int getValue();
+		void setAll(sf::Vector2f size, int _maxValue);
+		void setValue(int value);
 	private:
 		sf::RenderWindow *window;
 		sf::RectangleShape Outline;
